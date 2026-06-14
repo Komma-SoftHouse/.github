@@ -36,7 +36,7 @@ Everything we ship runs on a modern, opinionated Laravel + Filament stack and is
 | Layer        | Technology                   |
 | ------------ | ---------------------------- |
 | Framework    | Laravel 13                   |
-| Language     | PHP 8.5                      |
+| Language     | PHP 8.4                      |
 | Admin / UI   | FilamentPHP v5 · Livewire v4 |
 | Styling      | Tailwind CSS v4              |
 | Multitenancy | DB-per-tenant architecture   |
@@ -51,6 +51,26 @@ Our products are built on **Komma**, an internal multi-tenant SaaS starter-kit t
 - 🪙 **Wallets** — dual-layer wallet (central credit + per-tenant coin).
 - 🔐 **Entitlements** — modules, grants, permissions and feature flags.
 - 🎁 **Discounts & referrals** — built-in promotions and user referral system.
+
+## Fiscal compliance & e-invoicing
+
+Built-in compliance with Spanish and Basque tax regulations — invoicing, registry submission and time-tracking, ready for production.
+
+<div align="center">
+
+[![Veri*factu](https://img.shields.io/badge/Veri*factu-AEAT-E30613?style=for-the-badge&logoColor=white)](https://sede.agenciatributaria.gob.es)
+[![TicketBAI](https://img.shields.io/badge/TicketBAI-Euskadi-009639?style=for-the-badge&logoColor=white)](https://www.euskadi.eus/ticketbai/)
+[![FACe](https://img.shields.io/badge/FACe-Facturae_3.2.2-005BBB?style=for-the-badge&logoColor=white)](https://face.gob.es)
+[![Registro de Jornada](https://img.shields.io/badge/Control_Horario-Registro_de_Jornada-6E40C9?style=for-the-badge&logoColor=white)](#)
+
+</div>
+
+| Module                | Standard                              | What it covers                                                                                                    |
+| --------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| 🧾 **Veri\*factu**     | AEAT — RD 1007/2023                   | Anti-fraud invoicing records, QR on invoice, real AEAT SOAP client with mTLS (P12), async submission with retries |
+| 🟢 **TicketBAI**       | Hacienda Foral (País Vasco / Navarra) | Signed invoice chaining and fiscal XML for Basque tax authorities                                                 |
+| 🏛️ **FACe**            | Facturae 3.2.2 (`.xsig`)              | Electronic invoices to public administrations, XAdES signature, FACe submission & status                          |
+| ⏱️ **Control Horario** | Registro de Jornada (RDL 8/2019)      | Employee time-tracking with RFID, exportable records for labor compliance                                         |
 
 ## Connect
 
